@@ -1,0 +1,36 @@
+POST http://localhost:8080/counters/create
+Content-Type: application/json
+
+{"name":"test"}
+
+###
+
+GET http://localhost:8080/counters/all
+
+###
+
+DELETE http://localhost:8080/counters/all
+
+###
+
+POST http://localhost:8080/counters/by-name
+Content-Type: application/json
+
+{"name":"test"}
+
+###
+
+DELETE http://localhost:8080/counters/by-name
+Content-Type: application/json
+
+{"name":"test"}
+
+###
+
+POST http://localhost:8080/counters/increment/{{ counter_id }}
+Content-Type: application/json
+
+{"name":"test"}
+
+###
+
